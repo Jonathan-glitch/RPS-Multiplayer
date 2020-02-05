@@ -6,20 +6,49 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>RPS-Multiplayer</title>
     <link rel="stylesheet" href="./assets/css/style.css">
+    <script src="./assets/javascript/config.js"></script>
     <script src="https://code.jquery.com/jquery-3.4.1.slim.js" integrity="sha256-BTlTdQO9/fascB1drekrDVkaKd9PkwBymMlHOiG+qLI=" crossorigin="anonymous"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.8.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.8.0/firebase-database.js"></script>
    <script src="./assets/javascript/game.js"></script>
 
 </head>
 <body>
 <title>Rock, paper and scissors</title>
+<div class="container">
+  <br>
+  <!-- Jumbotron -->
+  <div class="jumbotron">
+    <h1 class="text-center">Sign-Up Today!</h1>
+  </div>
+  <div class="row">
+    <!-- Sign-Up card-->
+    <div class="col-lg-6">
+      <div class="card">
+        <div class="card-header">
+          New Member Sign-Up
+        </div>
+        <div class="card-body">
+          <!-- Sign-up Form (note the various input "types")-->
+          <form role="form">
+            <div class="form-group">
+              <label for="name-input">Name:</label>
+              <input class="form-control" id="name-input" type="text">
+            </div>
 
 <!-- these are the 3 main button choices RPS -->
 <div class="btn-group">
-        <button>Rock</button>
-        <button>Paper</button>
-        <button>Scissors</button>
+        <button id="r">Rock</button>
+        <button id="p">Paper</button>
+        <button id="s">Scissors</button>
+      </div>
+      <div>
+        <p id="directions-text">Press r, p or s to start playing!</p>
+        <p id="userchoice-text"></p>
+        <p id="computerchoice-text"></p>
+        <p id="wins-text"></p>
+        <p id="losses-text"></p>
+        <p id="ties-text"></p>
       </div>
 </body>
-<script src="https://www.gstatic.com/firebasejs/7.8.0/firebase-app.js"></script>
-<script src="https://www.gstatic.com/firebasejs/7.8.0/firebase-database.js"></script>
 </html>
